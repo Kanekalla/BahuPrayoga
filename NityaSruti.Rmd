@@ -1,0 +1,53 @@
+---
+title: "NityaSruti"
+author: "Kanekalla"
+date: "September 8, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+## Regular Expression
+
+grep : Returns index of the object where a regular expression was found in the string
+```{r }
+x<-c("HSPA1A","HSPA1B","HSPA1L","HSPA4","HSPA4L")
+grep("HSPA4",x) 
+```
+grepl : Returns logical values for regular expression matching 
+to get the match that has either "HSPA1A" or "HSPA1B" in a the string names
+```{r }
+grepl( "HSPA1A|B",x)
+```
+##sub : Substitute a pattern with a given string at first occurrence only
+
+```{r}
+y<-"These genes are HSP70 genes"
+sub("genes", "------GEEEEEENEEES----",y )           
+     
+```
+##gsub: Substitute a pattern with a given string globally/all occurances
+```{r}
+gsub("genes", "------GEEEEEENEEES----",y )    
+```
+
+regexpr : Return the first position of found string by regular expression
+gregexpr : Return all positions of test string by regular expression
+```{r}
+regexpr("SPA1",x ) 
+gregexpr("SPA1",x)
+```
+
+substr: Extract or replace substrings in a character vector
+```{r}
+#y 
+substr(y, 7,11)
+
+```
+
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
