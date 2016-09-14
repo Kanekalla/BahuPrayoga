@@ -1,0 +1,29 @@
+---
+title: "dRzya"
+author: "Kanekalla"
+date: "September 14, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+Visualization packages
+
+```{r cars}
+install.packages("ComplexHeatmap")
+library(ComplexHeatmap)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r}
+install.packages("qtlcharts")
+library(qtlcharts)
+```
+
+

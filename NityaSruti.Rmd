@@ -38,7 +38,7 @@ regexpr : Return the first position of found string by regular expression
 gregexpr : Return all positions of test string by regular expression
 ```{r}
 regexpr("SPA1",x ) 
-gregexpr("SPA1",x)
+#gregexpr("SPA1",x)
 ```
 
 substr: Extract or replace substrings in a character vector
@@ -47,7 +47,10 @@ substr: Extract or replace substrings in a character vector
 substr(y, 7,11)
 
 ```
-
+Print the system time for logs  
+```{r}
+cat(sprintf("%s\t--System Time for logs \t", Sys.time()))
+```
 
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
